@@ -11,7 +11,7 @@ This is a continued version.
 - cURL extension for PHP (included in most sharing hosting providers)
 
 ## Setup  
-1. Go to your webserver's documentroot, then do `git clone https://codeberg.org/lime360/yt-2005-watch` on the directory.  
+1. Go to your webserver's documentroot, then do `git clone https://codeberg.org/lime360/yt-2005-watch` on the directory and run `composer install`.  
 2. You're done! If you wanna configure stuff, edit `includes/config.inc.php`, where the values are clearly marked in the comments.  
 
 ## Directory structure
