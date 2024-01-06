@@ -181,7 +181,7 @@ new VideoPlayer({element: document.querySelector('.video-player')});
 								</tbody>
 							</table>
 						</div>
-
+						<!--
 						<a name="comment"></a>
 						<div style="padding-bottom: 5px; font-weight: bold; color: #444;">Comment on this video:</div>
 
@@ -194,6 +194,7 @@ new VideoPlayer({element: document.querySelector('.video-player')});
 
 
 						</form>
+						-->
 						<br>
 						<div dummy="true">
 							<div class="commentsTitle">Comments:</div>
@@ -266,7 +267,7 @@ new VideoPlayer({element: document.querySelector('.video-player')});
 																	{{ videoConvertedRuntime }}<br>
 																	Views:
 																	{{ videoViews }}<br>
-																	Comments: 1
+																	Comments: {{ commentCount }}
 																</div>
 
 																<div style="font-size: 10px; font-weight:bold; color: #CC6600; padding: 3px 6px; background-color:#FFCC66;">
@@ -298,7 +299,7 @@ new VideoPlayer({element: document.querySelector('.video-player')});
 																		{{ related.compactVideoRenderer.lengthText.simpleText }}<br>
 																		Views:
 																		{{ related.compactVideoRenderer.viewCountText.simpleText }}<br>
-																		Comments: 1
+																		Comments: {{ related.compactVideoRenderer.commentText.simpleText }}
 																	</div>
 																</td>
 															</tr>
