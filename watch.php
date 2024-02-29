@@ -16,7 +16,7 @@ include("includes/youtubei/comments.php");
 include_once("includes/config.inc.php");
 
 // debug flag
-if (isset(($_GET['debug']))) {
+if (isset($_GET['debug'])) {
     if ($_GET['debug'] == $debugCode) {
         $debug = true;
     }

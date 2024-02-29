@@ -1,9 +1,17 @@
-<!DOCTYPE html>
 <!--
 original: https://github.com/purpletheblaze/viewfinder-2005
 
 the original repo got deleted so shotouts to kamtape for restoring it!
 -->
+<?php
+$v = "";
+if (!isset($_GET["v"])) {
+	http_response_code(404);
+	exit;
+} else {
+	$v = $_GET["v"];
+}
+?>
 <link rel="stylesheet" href="player.css" />
 <script src="player.js"></script>
 <div class="player" id="playerBox">
@@ -55,7 +63,7 @@ the original repo got deleted so shotouts to kamtape for restoring it!
 					2005-Style HTML5 player<br />
 					<br />
 					by purpleblaze<br />
-					preserved by lime360
+					preserved by lime360 for use in yt-2005-watch
 				</div>
 			</div>
 			<button id="aboutCloseBtn">Close</button>
